@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+
+.top-nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.hero-section {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #1565C0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0D47A1;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.section {
+    width: 45%;
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admission-process h2 {
+    color: #2196F3;
+}
+
+.academic-programs h2 {
+    color: #2196F3;
+}
+
+.contact h2 {
+    color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}

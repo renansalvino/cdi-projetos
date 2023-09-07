@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>CDI - Comissão Discente de Informática</title>
+    <style>
+        body {
+            font-family: Montsserat, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0002FE;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .topic {
+            margin-bottom: 30px;
+        }
+        .topic h1 {
+            color: black;
+            text-shadow: 2px 2px #CFCF30;
+        }
+        .topic img {
+            float: left;
+            margin: 10px 10px 0 0;
+            max-width: 150px; /* Ajuste conforme necessário */
+        }
+        /* Estilo da barra de pesquisa */
+        #divBusca {
+            text-align: right;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        #divBusca img {
+            width: 20px;
+            margin-right: 5px;
+        }
+        #divBusca input[type="text"] {
+            padding: 6px;
+        }
+        #divBusca button {
+            padding: 6px 12px;
+            background-color: #0002FE;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <!-- links para biblioteca FullCalendar -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./img/Logo CDI.png" alt="">
+            </div>
+        </div>
+        <h1 style="font-size: 300%;">CDI - Comissão Discente de Informática</h1>
+        <img src="https://camilalordelo1.github.io/cdi-unicamp/img/Logo%20CDI.png" alt="CDI">
+    </header>
+    <!-- Barra de pesquisa -->
+    <div id="divBusca">
+        <!--<img src="search3.png" alt="Buscar..."/>-->
+        <input type="text" id="txtBusca" placeholder="Buscar...">
+        <button id="btnBusca">Buscar</button>
+    </div>
+    <div class="topic">
+        <h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-H41_5-u5IOaOY8wA4bjq6yIg85DMwySnToZUXFWz1o_o9zA4" alt="Oportunidades Externas" style="max-width: 150px;">Oportunidades Externas & Carreiras</h1>
+        <p>Informações sobre estágios, IC, etc (com link e explicação sobre o tópico).</p>
+    </div>
+    
+    <div class="topic">
+        <p>
+            <p>
+                <p>
+                    
+                </p>
+            </p>
+        </p>
+        <hr>
+        <p>
+            <p>
+                
+            </p>
+        </p>
+        <hr>
+        <h1>Eventos Próximos</h1>
+        <div style="overflow: hidden;">
+            <img src="https://i.imgur.com/AtGb6zx.png" alt="Eventos" style="max-width: 1200px; float: right; margin: 0 10px 10px 0;">
+            
+            <p>Data sobre os eventos próximos conforme o calendário e link para post (ou alguma publicação) com demais informações sobre o mesmo.</p>
+            <p>
+                <p>
+                    
+                </p>
+            </p>
+            <hr>
+            <hr>
+        </div>
+        <div id="calendar"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    // Adicionar os eventos
+                ]
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>
+

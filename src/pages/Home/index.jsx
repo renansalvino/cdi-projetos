@@ -1,35 +1,25 @@
+import { Box, Text } from '@chakra-ui/react';
 import React from 'react';
-import { Link } from "react-router-dom";
+import {Overlay} from "../../components/Overlay"
 
 function Home() {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li> 
-            <Link to="/"> Home </Link> 
-          </li>
-          <li> 
-            <Link to="/sobre-nos"> Sobre Nós </Link> 
-          </li>
-          <li> 
-            <Link to="/membros"> Membros </Link> 
-          </li>
-          <li> 
-            <Link to="/nossas-iniciativas"> Nossas iniciativas </Link>
-          </li>
-          <li> 
-            <Link to="/cdi-help-desk"> CDI Help Desk </Link> 
-          </li>
-          <li>  
-            <Link to="/patrocinador"> Patrocinador </Link>  
-          </li>
-          <li>  
-            <Link to="/contato"> Contato </Link>  
-          </li>
-        </ul>
-      </nav>
-  </div>
+    <Box w="100%">
+            <Box>
+                <Text pl="80px" m="none" pt="none" fontSize="xl" color="gray.500" fontWeight="bold">
+                    nós somos a
+                </Text>
+                <Text pl="80px" m="none" pt="none" color="gray.100" fontSize="2xl" fontWeight="bold">
+                    comissão discente de
+                </Text>
+                <Text pl="80px" m="none" pt="none" color="gray.100" fontSize="6xl" fontWeight="bold">
+                    INFORMÁTICA
+                </Text>
+                <Text pl="80px" m="none" pt="none" color="gray.100" fontSize="xl" fontWeight="bold">
+                    da Faculdade de Tecnologia da UNICAMP
+                </Text>
+            </Box>
+        </Box>
   );
 }
 

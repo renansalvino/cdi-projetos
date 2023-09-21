@@ -8,13 +8,13 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 const theme = extendTheme({
   colors: {
     primary: {
-      100: "#0A68F6",
+      100: "#0002FE",
       500: "#1405FF",
       900: "#0C065F"
     },
     secondary: {
       100: "#b17df2",
-      500: "#7305ff",
+      500: "#4330EC",
       900: "#3a0d72"
     },
     warning: {
@@ -29,8 +29,8 @@ const theme = extendTheme({
     }
   },
   fonts: {
-    heading: `'Roboto', sans-serif`,
-    body: `'Roboto', sans-serif`,
+    heading: "Roboto, sans-serif",
+    body: "Raleway Thin, sans-serif",
   },
 });
 

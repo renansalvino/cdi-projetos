@@ -15,7 +15,6 @@ export default function VidaCampus() {
                     <h3>Nome do Evento</h3>
                     <p>Data: 20 de Agosto, 2023</p>
                     <p>Localização: Faculdade de Tecnologia</p>
-                    <a href="#" class="event-details">Detalhes</a>
                 </div>
             </section>
 

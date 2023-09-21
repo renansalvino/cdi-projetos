@@ -1,8 +1,13 @@
 import React from "react"
+import Title from "../../components/Title"
 
 export default function Guia() {
+    const title = "Guia para ingressantes"
+    const subtitle = "Chegou no campus e se sentiu perdido? A CDI te ajuda!"
+
     return (
         <>
+            <Title title={title} subtitle={subtitle} />
             <section class="hero-section">
                 <h1>Bem-vindo à Unicamp</h1>
                 <p>Preparamos tudo que você precisa saber para começar sua jornada conosco.</p>

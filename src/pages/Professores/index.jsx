@@ -1,13 +1,19 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
-import React from "react"
+import React from "react";
 import ProfessorCard from "./ProfessorCard";
-import ProfessoresJson from "./professores.json"
+import ProfessoresJson from "./professores.json";
+import Title from "../../components/Title";
 
 function Professores() {
-    const professores = ProfessoresJson.data
-    console.log(professores)
+    const professores = ProfessoresJson.data;
+    console.log(professores);
+
+    const title = "Professores"
+    const subtitle = "Os melhores professores de tecnologia do Brasil estão aqui na FT-Unicamp!"
+
     return (
         <>
+            <Title title={title} subtitle={subtitle} />
             <Box
                 bg="white"
                 w={{ base: "100%" }}
@@ -27,7 +33,6 @@ function Professores() {
                     </Box>
                 </Box>
 
-
                 <Box>
                     {professores.map((professor, index) => (
                         <ProfessorCard
@@ -35,12 +40,13 @@ function Professores() {
                             nome={professor.nome}
                             lattes={professor.lattes}
                             img={professor.img}
+                            areas={professor.areas}
                         />
                     ))}
                 </Box>
             </Box>
         </>
-    )
+    );
 }
 
 export default Professores;

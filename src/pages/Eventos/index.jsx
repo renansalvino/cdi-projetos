@@ -1,8 +1,13 @@
 import React from 'react';
+import Title from '../../components/Title';
 
 export default function Eventos() {
+    const title = "Eventos"
+    const subtitle = "Fique por dentro dos principais eventos da FT!"
+
     return (
         <>
+            <Title title={title} subtitle={subtitle} />
             <header>
                 <div class="container">
                     <div class="logo">
@@ -44,9 +49,9 @@ export default function Eventos() {
                 </p>
                 <hr />
                 <h1>Eventos Próximos</h1>
-                    <div style={{overflow: "hidden"}}>
+                <div style={{ overflow: "hidden" }}>
                     <img src="https://i.imgur.com/AtGb6zx.png" alt="Eventos"
-                        style={{maxWidth: "1200px", float: "right", margin: "0 10px 10px 0"}} />
+                        style={{ maxWidth: "1200px", float: "right", margin: "0 10px 10px 0" }} />
 
                     <p>Data sobre os eventos próximos conforme o calendário e link para post (ou alguma publicação) com demais
                         informações sobre o mesmo.</p>

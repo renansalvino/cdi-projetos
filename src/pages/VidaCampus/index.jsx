@@ -1,8 +1,13 @@
 import React from "react";
+import Title from "../../components/Title";
 
 export default function VidaCampus() {
+    const title = "Vida no campus"
+    const subtitle = "Se você quer saber como é a vida de um Unicamper chegou na página certa!"
+
     return (
         <>
+            <Title title={title} subtitle={subtitle} />
             <section class="center">
                 <h1>Bem vindo a página de Vida no Campus</h1>
                 <p>Aqui vai ser possível explorar informações sobre o campus de Limeira.</p>

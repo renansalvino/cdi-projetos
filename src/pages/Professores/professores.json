@@ -3,22 +3,26 @@
         {
             "nome": "GUILHERME PALERMO COELHO",
             "lattes": "http://lattes.cnpq.br/0597865875425201",
-            "img": "GuilhermePCoelho_quad.jpg"
+            "img": "GuilhermePCoelho_quad.jpg",
+            "areas": ["- Teste de Software","- Engenharia de Software", "- Algoritmos para Roteamento de Veículos"]
         },
         {
             "nome": "ANA ESTELA ANTUNES DA SILVA",
             "lattes": "http://lattes.cnpq.br/9070607576528017",
-            "img": "ana_estela.jpg"
+            "img": "ana_estela.jpg",
+            "areas": ["- Teste de Software","- Engenharia de Software", "- Algoritmos para Roteamento de Veículos"]
         },
         {
             "nome": "ANDRÉ LEON SAMPAIO GRADVOHL",
             "lattes": "http://lattes.cnpq.br/9343261628675642",
-            "img": "andre_leon.jpg"
+            "img": "andre_leon.jpg",
+            "areas": ["- Teste de Software","- Engenharia de Software", "- Algoritmos para Roteamento de Veículos"]
         },
         {
             "nome": "PLÍNIO ROBERTO SOUZA VILELA",
             "lattes": "http://lattes.cnpq.br/3674036702112123",
-            "img": "photoPlinio.jpg"
+            "img": "photoPlinio.jpg",
+            "areas": ["- Teste de Software","- Engenharia de Software", "- Algoritmos para Roteamento de Veículos"]
         }
     ]
 }

@@ -35,6 +35,9 @@ export default function NavBar() {
                 <NavLink to="/VidaNoCampus">
                     Vida No Campus
                 </NavLink>
+                <NavLink to="/Professores">
+                    Professores
+                </NavLink>
                 <NavLink to="/Contato">
                     Contato
                 </NavLink>

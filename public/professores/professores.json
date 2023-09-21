@@ -1,0 +1,24 @@
+{
+    "professores": [
+        {
+            "nome": "GUILHERME PALERMO COELHO",
+            "lattes": "http://lattes.cnpq.br/0597865875425201",
+            "img": "GuilhermePCoelho_quad.jpg"
+        },
+        {
+            "nome": "ANA ESTELA ANTUNES DA SILVA",
+            "lattes": "http://lattes.cnpq.br/9070607576528017",
+            "img": "ana_estela.jpg"
+        },
+        {
+            "nome": "ANDRÉ LEON SAMPAIO GRADVOHL",
+            "lattes": "http://lattes.cnpq.br/9343261628675642",
+            "img": "andre_leon.jpg"
+        },
+        {
+            "nome": "PLÍNIO ROBERTO SOUZA VILELA",
+            "lattes": "http://lattes.cnpq.br/3674036702112123",
+            "img": "photoPlinio.jpg"
+        }
+    ]
+}

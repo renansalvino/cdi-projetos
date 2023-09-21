@@ -17,6 +17,7 @@ import Contato from './pages/Contato/index'
 import Eventos from './pages/Eventos/index'
 import Guia from './pages/Guia/index'
 import VidaCampus from './pages/VidaCampus/index'
+import Professores from './pages/Professores/index'
 
 // router and routes
 const router = createBrowserRouter(
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
       <Route element = {< Guia />}  path="/Guia"></Route>
       <Route element = {< Contato />}  path="/Contato"></Route>
       <Route element = {< VidaCampus />}  path="/VidaNoCampus"></Route>
+      <Route element = {< Professores />}  path="/Professores"></Route>
     </Route>
   )
 )

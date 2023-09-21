@@ -33,7 +33,7 @@ function Professores() {
                     </Box>
                 </Box>
 
-                <Box>
+                <Box mt="100px">
                     {professores.map((professor, index) => (
                         <ProfessorCard
                             key={index}

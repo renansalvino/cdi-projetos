@@ -1,32 +1,56 @@
-import React from "react"
-import Title from "../../components/Title"
+import React from "react";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import Title from "../../components/Title";
+import Card from "./VidaCampusCard";
+import VideoCard from "./VideoCard";
+import ImageCard from "./ImageCard";
+import Map from "./Map";
+import Intership from "./Intership";
+import MyComponent from "./MyComponent";
 
-export default function Guia() {
-    const title = "Guia para ingressantes"
-    const subtitle = "Chegou no campus e se sentiu perdido? A CDI te ajuda!"
+export default function VidaCampus() {
+    const title = "Guia para Ingressantes";
+    const subtitle = "Chegou no campus e se sentiu perdido ? A CDI te ajuda !";
 
     return (
         <>
             <Title title={title} subtitle={subtitle} />
-            <section class="hero-section">
-                <h1>Bem-vindo à Unicamp</h1>
-                <p>Preparamos tudo que você precisa saber para começar sua jornada conosco.</p>
-                <a href="#admission-process" class="cta-button">Saiba Mais</a>
-            </section>
-
-            <section class="section-container">
-                <section class="section admission-process" id="admission-process">
-                    <h2>Cursos</h2>
-                    <p>Conheça nossos cursos.</p>
-                    <a href="#programs" class="cta-button">Nossos Programas</a>
-                </section>
-
-                <section class="section academic-programs" id="academic-programs">
-                    <h2>Horas Complementares</h2>
-                    <p>Tutorial para atividades complementares.</p>
-                    <a href="#contact" class="cta-button">Saiba Mais</a>
-                </section>
-            </section>
+            <Box bg="white"
+                w={{ base: "100%" }}
+                mx="auto"
+                p={4}
+                textAlign="center"
+                borderRadius="10px"
+            >
+                <Heading color="#4330EC" mb="20px" fontFamily="heading" fontWeight="bold" fontSize="40px">
+                    Mapa do Campus
+                </Heading>
+                <Box>
+                    <Map
+                        imageSrc='/campuslife/img/Pinguim.jpeg'
+                        altText="Descrição da Imagem"
+                        description=""
+                    />
+                    <Box>
+                        <ImageCard />
+                    </Box>
+                    <Box>
+                        <Intership
+                            imageSrc='/campuslife/img/Pinguim.jpeg'
+                            altText="Descrição da Imagem"
+                            description="Estágio e Vagas"
+                        />
+                    </Box>
+                    <Box>
+                        <Intership
+                            imageSrc='/campuslife/img/Pinguim.jpeg'
+                            altText="Descrição da Imagem"
+                            description="Grupos de matérias - WhatsApp"
+                        />
+                    </Box>
+                    <MyComponent/>
+                </Box>
+            </Box>
         </>
     )
 }

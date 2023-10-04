@@ -6,8 +6,8 @@ import VideoCard from "./VideoCard";
 import ImageCard from "./ImageCard";
 
 export default function VidaCampus() {
-    const title = "Vida no campus";
-    const subtitle = "Se você quer saber como é a vida de um Unicamper, chegou na página certa!";
+    const title = "Guia para Ingressantes";
+    const subtitle = "Chegou no campus e se sentiu perdido ? A CDI te ajuda !";
 
     return (
         <>

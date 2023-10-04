@@ -6,9 +6,9 @@ const Card = ({ imageSrc, altText, description }) => {
     <Center>
       <Box margin="20px">
         <Image src={imageSrc} alt={altText} className="custom-image" marginLeft="280px" maxWidth="100" />
-        <Box maxW="sm" borderWidth="1px" borderRadius="lg">
+        <Box bg = '#E4E5FF' maxW="sm" borderWidth="1px" borderRadius="lg">
           <Box p="6">
-            <Text  as="span" d="block" fontSize="40px" color="#0002FE" mb="2">
+            <Text  as="span" d="block" fontSize="40px" color="#000000" mb="2">
               {description}
             </Text>
             <UnorderedList>
@@ -16,6 +16,7 @@ const Card = ({ imageSrc, altText, description }) => {
               <ListItem>Almoço: das 10h30 às 14h00</ListItem>
               <ListItem>Jantar: das 17h30 às 19h45</ListItem>
             </UnorderedList>
+            <Text mt="4">Valor: R$3,00</Text>
           </Box>
         </Box>
         <Button bg="#0002FE" color="#FFFFFF" size="md" mt={5}>

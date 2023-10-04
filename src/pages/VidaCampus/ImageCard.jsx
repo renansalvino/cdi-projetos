@@ -3,8 +3,8 @@ import { Box, Heading, Text, Flex, Button, Grid, GridItem } from "@chakra-ui/rea
 
 const ImageCard = () => {
   return (
-    <Grid templateColumns="1fr 2fr 1fr" mt={4}>
-      <GridItem colSpan={2} textAlign="center" maxW="400px" justifySelf="center"> 
+    <Grid templateColumns="1fr 2fr 1fr" mt={20} marginLeft={200}>
+      <GridItem colSpan={2} textAlign="center" maxW="500px" justifySelf="center" ml={4}> 
         <Box>
           <Heading color="#0002FE" as="h2" fontSize="xl" mb={4}>
             Intercamp

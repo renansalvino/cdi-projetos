@@ -1,5 +1,8 @@
-import React from 'react';
-import Title from '../../components/Title';
+import React from 'react'
+import Title from '../../components/Title'
+import { Box, Grid, GridItem, Heading, Text } from '@chakra-ui/react'
+import './styles.css';
+
 
 export default function Eventos() {
     const title = "Eventos"
@@ -8,57 +11,199 @@ export default function Eventos() {
     return (
         <>
             <Title title={title} subtitle={subtitle} />
-            <header>
-                <div class="container">
-                    <div class="logo">
-                        <img src="./img/Logo CDI.png" alt="" />
-                    </div>
-                </div>
-                <h1>CDI - Comissão Discente de Informática</h1>
-                <img src="https://camilalordelo1.github.io/cdi-unicamp/img/Logo%20CDI.png" alt="CDI" />
-            </header>
-            {
-                //Barra de pesquisa
-            }
-            <div id="divBusca">
-                {
-                    //<img src="search3.png" alt="Buscar..." />
-                }
-                <input type="text" id="txtBusca" placeholder="Buscar..." />
-                <button id="btnBusca">Buscar</button>
-            </div>
-            <div class="topic">
-                <h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-H41_5-u5IOaOY8wA4bjq6yIg85DMwySnToZUXFWz1o_o9zA4"
-                    alt="Oportunidades Externas" />Oportunidades Externas & Carreiras</h1>
-                <p>Informações sobre estágios, IC, etc (com link e explicação sobre o tópico).</p>
-            </div>
+            <Box style={{ paddingInline: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#fff', maxWidth: '100%' }}>
+                <Grid templateColumns='repeat(6, 1fr)' gap={6}>
+                    <GridItem w='100%' colSpan={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <Text style={{ marginBottom: '30px', fontSize: '55px', color: '#4330EC', fontWeight: 'bold' }}>
+                            Eventos já realizados
+                        </Text>
+                    </GridItem>
+                    <GridItem w='100%' colSpan={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <Text style={{ margin: '30px', fontSize: '18px', textAlign: 'center', color: '#0002FE', fontWeight: 'bold' }}>
+                            A CDI é campeã em proporcionar experiências ÚNICAS e TRANSFORMADORAS.
+                            Acreditamos no poder da vivência acima de tudo e por isso sempre nos preocupamos em preparar
+                            atividades imersivas aos alunos.
+                        </Text>
+                    </GridItem>
+                    <GridItem colSpan={6}>
 
-            <div class="topic">
-                <p>
-                    <p>
-                        <p>
+                        <Box display="flex" justifyContent="space-between">
+                            <Box
+                                width="234px"
+                                height="231px"
+                                backgroundColor="#D9D9D9"
+                                position="relative"
+                                marginBottom="5px"
+                            >
+                                <Box position="absolute" top="50%" left="0" transform="translateY(-50%)">
+                                    <span>&#8656;</span>
+                                </Box>
+                            </Box>
+                            <Box
+                                width="234px"
+                                height="231px"
+                                backgroundColor="#D9D9D9"
+                                position="relative"
+                                marginBottom="5px"
+                            ></Box>
+                            <Box
+                                width="234px"
+                                height="231px"
+                                backgroundColor="#D9D9D9"
+                                position="relative"
+                                marginBottom="5px"
+                            ></Box>
+                            <Box
+                                width="234px"
+                                height="231px"
+                                backgroundColor="#D9D9D9"
+                                position="relative"
+                                marginBottom="5px"
+                            >
+                                <Box position="absolute" top="50%" right="0" transform="translateY(-50%)">
+                                    <span>&#8658;</span>
+                                </Box>
+                            </Box>
+                        </Box>
+                    </GridItem>
+                    <GridItem colSpan={6}>
+                        <Box className="event-section">
+                            <Box className="event-container">
+                                <Box className="event-header">
+                                    <Heading as="h2" marginBottom="10px">
+                                        Mural de eventos
+                                    </Heading>
+                                    <Text>Acompanhe o nosso mural para ficar por dentro dos próximos eventos que ocorrerão.</Text>
+                                    <br />
+                                    <Box
+                                        width="700px"
+                                        height="200px"
+                                        backgroundColor="#ffffff"
+                                        position="relative"
+                                        marginBottom="20px"
+                                    >
+                                        <Text position="absolute" top="20px" left="20px">
+                                            Nome do evento:
+                                        </Text>
+                                        <Text position="absolute" top="50px" left="20px">
+                                            Data:
+                                        </Text>
+                                        <Text position="absolute" top="80px" left="20px">
+                                            Hora:
+                                        </Text>
+                                        <Text position="absolute" top="110px" left="20px">
+                                            Link para inscrição:
+                                        </Text>
+                                        <Box
+                                            position="absolute"
+                                            top="50px"
+                                            right="50px"
+                                            width="80px"
+                                            height="80px"
+                                            backgroundColor="#D9D9D9"
+                                            borderRadius="50%"
+                                        ></Box>
+                                        <br />
+                                    </Box>
 
-                        </p>
-                    </p>
-                </p>
-                <hr />
-                <p>
-                    <p>
+                                    <Box
+                                        width="700px"
+                                        height="200px"
+                                        backgroundColor="#ffffff"
+                                        position="relative"
+                                        marginBottom="20px"
+                                    >
+                                        <Text position="absolute" top="20px" left="20px">
+                                            Nome do evento:
+                                        </Text>
+                                        <Text position="absolute" top="50px" left="20px">
+                                            Data:
+                                        </Text>
+                                        <Text position="absolute" top="80px" left="20px">
+                                            Hora:
+                                        </Text>
+                                        <Text position="absolute" top="110px" left="20px">
+                                            Link para inscrição:
+                                        </Text>
+                                        <Box
+                                            position="absolute"
+                                            top="50px"
+                                            right="50px"
+                                            width="80px"
+                                            height="80px"
+                                            backgroundColor="#D9D9D9"
+                                            borderRadius="50%"
+                                        ></Box>
+                                    </Box>
 
-                    </p>
-                </p>
-                <hr />
-                <h1>Eventos Próximos</h1>
-                <div style={{ overflow: "hidden" }}>
-                    <img src="https://i.imgur.com/AtGb6zx.png" alt="Eventos"
-                        style={{ maxWidth: "1200px", float: "right", margin: "0 10px 10px 0" }} />
+                                    <Box
+                                        width="700px"
+                                        height="200px"
+                                        backgroundColor="#ffffff"
+                                        position="relative"
+                                        marginBottom="20px"
+                                    >
+                                        <Text position="absolute" top="20px" left="20px">
+                                            Nome do evento:
+                                        </Text>
+                                        <Text position="absolute" top="50px" left="20px">
+                                            Data:
+                                        </Text>
+                                        <Text position="absolute" top="80px" left="20px">
+                                            Hora:
+                                        </Text>
+                                        <Text position="absolute" top="110px" left="20px">
+                                            Link para inscrição:
+                                        </Text>
+                                        <Box
+                                            position="absolute"
+                                            top="50px"
+                                            right="50px"
+                                            width="80px"
+                                            height="80px"
+                                            backgroundColor="#D9D9D9"
+                                            borderRadius="50%"
+                                        ></Box>
+                                        <br />
+                                    </Box>
 
-                    <p>Data sobre os eventos próximos conforme o calendário e link para post (ou alguma publicação) com demais
-                        informações sobre o mesmo.</p>
-                    <p />
-                </div>
-                <div id="calendar"></div>
-            </div>
+                                    <Box
+                                        width="700px"
+                                        height="200px"
+                                        backgroundColor="#ffffff"
+                                        position="relative"
+                                        marginBottom="20px"
+                                    >
+                                        <Text position="absolute" top="20px" left="20px">
+                                            Nome do evento:
+                                        </Text>
+                                        <Text position="absolute" top="50px" left="20px">
+                                            Data:
+                                        </Text>
+                                        <Text position="absolute" top="80px" left="20px">
+                                            Hora:
+                                        </Text>
+                                        <Text position="absolute" top="110px" left="20px">
+                                            Link para inscrição:
+                                        </Text>
+                                        <Box
+                                            position="absolute"
+                                            top="50px"
+                                            right="50px"
+                                            width="80px"
+                                            height="80px"
+                                            backgroundColor="#D9D9D9"
+                                            borderRadius="50%"
+                                        ></Box>
+                                        <br />
+                                    </Box>
+                                </Box>
+                            </Box>
+                        </Box>;
+
+                    </GridItem>
+                </Grid>
+            </Box>
 
         </>
     )

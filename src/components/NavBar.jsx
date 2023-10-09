@@ -18,7 +18,7 @@ export default function NavBar() {
                         fontWeight="500"
                         lineHeight="18px"
                         letterSpacing="0"
-                        textAlign="left"
+                        textAlign="left" color="white"
                     >
                         Sobre Nós
                     </Text>
@@ -31,6 +31,7 @@ export default function NavBar() {
                         lineHeight="18px"
                         letterSpacing="0"
                         textAlign="left"
+                        color="white"
                     >
                         Eventos
                     </Text>
@@ -42,7 +43,7 @@ export default function NavBar() {
                         fontWeight="500"
                         lineHeight="18px"
                         letterSpacing="0"
-                        textAlign="left"
+                        textAlign="left" color="white"
                     >
                         Professores
                     </Text>
@@ -54,7 +55,7 @@ export default function NavBar() {
                         fontWeight="500"
                         lineHeight="18px"
                         letterSpacing="0"
-                        textAlign="left"
+                        textAlign="left" color="white"
                     >
                         Guia para Ingressantes
                     </Text>
@@ -66,7 +67,7 @@ export default function NavBar() {
                         fontWeight="500"
                         lineHeight="18px"
                         letterSpacing="0"
-                        textAlign="left"
+                        textAlign="left" color="white"
                     >
                         Vida No Campus
                     </Text>
@@ -78,7 +79,7 @@ export default function NavBar() {
                         fontWeight="500"
                         lineHeight="18px"
                         letterSpacing="0"
-                        textAlign="left"
+                        textAlign="left" color="white"
                     >
                         Contato
                     </Text>

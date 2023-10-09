@@ -1,43 +1,47 @@
 import React from "react";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import Title from "../../components/Title";
+import Card from "./VidaCampusCard";
+import VideoCard from "./VideoCard";
+import ImageCard from "./ImageCard";
 
 export default function VidaCampus() {
-    const title = "Vida no campus"
-    const subtitle = "Se você quer saber como é a vida de um Unicamper chegou na página certa!"
+    const title = "Guia para Ingressantes";
+    const subtitle = "Chegou no campus e se sentiu perdido ? A CDI te ajuda !";
 
     return (
         <>
             <Title title={title} subtitle={subtitle} />
-            <section class="center">
-                <h1>Bem vindo a página de Vida no Campus</h1>
-                <p>Aqui vai ser possível explorar informações sobre o campus de Limeira.</p>
-            </section>
-
-            <section class="events">
-                <h2>Próximos eventos</h2>
-                <div class="event">
-
-                    <h3>Nome do Evento</h3>
-                    <p>Data: 20 de Agosto, 2023</p>
-                    <p>Localização: Faculdade de Tecnologia</p>
-                </div>
-            </section>
-
-            <h2>Vida do Estudante</h2>
-            <section class="cards">
-                <div class="card">
-                    <img src="imagem1.jpg" alt="Imagem 1" />
-                        <div class="card-text">Descrição da Imagem 1</div>
-                </div>
-                <div class="card">
-                    <img src="imagem2.jpg" alt="Imagem 2" />
-                        <div class="card-text">Descrição da Imagem 2</div>
-                </div>
-                <div class="card">
-                    <img src="imagem3.jpg" alt="Imagem 3" />
-                        <div class="card-text">Descrição da Imagem</div>
-                </div>
-            </section>
+            <Box bg="white"
+                w={{ base: "100%" }}
+                mx="auto"
+                p={4}
+                textAlign="center"
+                borderRadius="10px"
+            >
+                <Heading color="#4330EC" mb="20px" fontFamily="heading" fontWeight="bold" fontSize="40px">
+                    Bandeco
+                </Heading>
+                <Box>
+                    <Text fontFamily="body" fontWeight="light" color="#7305FF" fontSize="25px">
+                        Vulgo Bandejão
+                    </Text>
+                </Box>
+                <Box>
+                    <Card
+                        imageSrc='/campuslife/img/Pinguim.jpeg'
+                        altText="Descrição da Imagem"
+                        description=""
+                    />
+                    <Box>
+                        <ImageCard/>
+                    </Box>
+                    <Box> 
+                        <VideoCard
+                        />
+                    </Box>
+                </Box>
+            </Box>
         </>
     )
 }

@@ -16,11 +16,11 @@ export default function Footer() {
                 <Stack justify="space-between" direction="row" align="center">
                     <Image src="/img/logo.png" color="white" alt='CDI' w="80px" />
                     <ButtonGroup variant="tertiary" color="white">
-                        <Stack color="white">
-                            <Text fontWeight="bold" fontSize="2xl" ml={{base: '3'}}> CONTATE-NOS </Text>
-                            <Text><IconButton as="a" href="#" aria-label="LinkedIn" icon={<FaInstagram />} />@cdi.unicamp </Text> 
-                            <Text><IconButton as="a" href="#" aria-label="GitHub" icon={<EmailIcon />} />comissao.informatica.ft@gmail.com</Text>
-                            <Text><IconButton as="a" href="#" aria-label="Twitter" icon={<FaLinkedin />} />CDI-FT Unicamp</Text>
+                        <Stack color="#fff" textAlign="left">
+                            <Text fontWeight="bold" color="#fff" fontSize="2xl" ml={{base: '3'}}> CONTATE-NOS </Text>
+                            <Text color="#fff"><IconButton as="a" href="#" aria-label="LinkedIn" icon={<FaInstagram />} />@cdi.unicamp </Text> 
+                            <Text color="#fff"><IconButton as="a" href="#" aria-label="GitHub" icon={<EmailIcon />} />comissao.informatica.ft@gmail.com</Text>
+                            <Text color="#fff"><IconButton as="a" href="#" aria-label="Twitter" icon={<FaLinkedin />} />CDI-FT Unicamp</Text>
                         </Stack>
 
                     </ButtonGroup>

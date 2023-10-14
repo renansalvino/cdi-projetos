@@ -1,7 +1,6 @@
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import { Grid, GridItem, Box } from "@chakra-ui/react"
-
 import { Routes, Route } from 'react-router-dom';
 import Home from "../pages/Home";
 import SobreNos from "../pages/SobreNos";
@@ -14,6 +13,7 @@ import Guia from "../pages/Guia";
 import Contato from "../pages/Contato";
 import VidaCampus from "../pages/VidaCampus";
 import Professores from "../pages/Professores";
+
 
 export default function RootLayout() {
   return (

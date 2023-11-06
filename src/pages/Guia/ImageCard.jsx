@@ -9,52 +9,43 @@ const ImageCard = () => {
           <Heading color="#4330EC" mb="20px" fontFamily="heading" fontWeight="bold" fontSize="40px">
             Eletivas e Horas Complementares
           </Heading>
-          <Text fontSize="md" color="#0002FE" mb={4}>
-            Em todos os nossos cursos, as horas complementares desempenham um papel fundamental no enriquecimento da sua formação acadêmica. Estas horas podem ser obtidas por meio de diversas atividades, como participação em palestras inspiradoras, visitas técnicas empolgantes, envolvimento em projetos de monitoria e muito mais. Abaixo, você encontrará informações detalhadas sobre a quantidade de horas complementares necessárias para a conclusão do seu curso e orientações sobre como conquistá-las.
-          </Text>
-          <Flex direction="column">
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Iniciação Científica ou Tecnológica - Até 240 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Empresa Junior - Até 60 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Projetos financiados com recebimento de bolsas - Até 120 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Programa de Apoio Didático (PAD) - Até 120 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Intercâmbio pela DERI - Até 120 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Estágio não obrigatório - até 120 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Visitas técnicas ou culturais monitoradas - Até 60 horas.
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Ouvinte em atividades acadêmicas - Até 60 horas
-            </Button><Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Organização de atividades acadêmicas - Até 60 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Apresentação em atividades acadêmicas - Até 60 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Programas vinculados à órgãos externos - Até 120 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Cursos extra-curriculares - Até 120 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Participação em órgãos colegiados - Até 40 horas
-            </Button>
-            <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
-              Participação em Orgs - Até 60 horas
-            </Button>
-          </Flex>
+          <Box textAlign="justify">
+            <Text fontSize="md" color="#000000" mb={4}>
+              Em todos os nossos cursos, as horas complementares desempenham um papel fundamental no enriquecimento da sua formação acadêmica. Estas horas podem ser obtidas por meio de diversas atividades, como participação em palestras inspiradoras, visitas técnicas empolgantes, envolvimento em projetos de monitoria e muito mais. Abaixo, você encontrará informações detalhadas sobre a quantidade de horas complementares necessárias para a conclusão do seu curso e orientações sobre como conquistá-las.
+            </Text>
+            <Flex direction="column">
+              <a href="https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2024/index.html" target="_blank" class="button-link">
+                <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
+                  Catálogo dos Cursos de Graduação 2024
+                </Button>
+              </a>
+              <a href="https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/index.html" target="_blank" class="button-link">
+                <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
+                  Catálogo dos Cursos de Graduação 2023
+                </Button>
+              </a>
+              <a href="https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2022/index.html" target="_blank" class="button-link">
+                <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
+                  Catálogo dos Cursos de Graduação 2022
+                </Button>
+              </a>
+              <a href="https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2021/index.html" target="_blank" class="button-link">
+                <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
+                  Catálogo dos Cursos de Graduação 2021
+                </Button>
+              </a>
+              <a href="https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2020/index.html" target="_blank" class="button-link">
+                <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
+                  Catálogo dos Cursos de Graduação 2020
+                </Button>
+              </a>
+              <a href="https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2019/index.html" target="_blank" class="button-link">
+                <Button bg="#E4E5FF" color="#0002FE" size="md" mb={2}>
+                  Catálogo dos Cursos de Graduação 2019
+                </Button>
+              </a>
+            </Flex>
+          </Box>
         </Box>
       </GridItem>
       <GridItem colSpan={1} justifySelf="end" mt={6}>
@@ -62,8 +53,9 @@ const ImageCard = () => {
           <img
             src="/campuslife/img/guia.png"
             alt="Descrição da Imagem"
-            width="100%"
+            width="70%"
             height="auto"
+            style={{ float: 'right' }}
           />
         </Box>
       </GridItem>

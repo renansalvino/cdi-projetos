@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import Title from "../../components/Title";
-import Card from "./VidaCampusCard";
-import VideoCard from "./VideoCard";
 import ImageCard from "./ImageCard";
 import Map from "./Map";
 import Intership from "./Intership";
@@ -30,6 +28,7 @@ export default function VidaCampus() {
                         imageSrc='/campuslife/img/Pinguim.jpeg'
                         altText="Descrição da Imagem"
                         description=""
+                        contentImg='/campuslife/img/mapa-campus.png'
                     />
                     <Box>
                         <ImageCard />
@@ -43,9 +42,7 @@ export default function VidaCampus() {
                     </Box>
                     <Box>
                         <Intership
-                            imageSrc='/campuslife/img/Pinguim.jpeg'
-                            altText="Descrição da Imagem"
-                            description="Grupos de matérias - WhatsApp"
+                            description="Grupos de matérias  WhatsApp"
                         />
                     </Box>
                     <MyComponent/>

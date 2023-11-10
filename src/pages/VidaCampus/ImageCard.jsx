@@ -8,7 +8,7 @@ const ImageCard = () => {
       </GridItem>
       <GridItem colSpan={1} textAlign="center" ml={4} maxW="50%" justifySelf={"center"}> 
         <Box>
-          <Heading color="black" as="h2" fontSize="xl" mb={4} textAlign={'center'}>
+          <Heading color="black" as="h2" fontSize="xl" mb={4} textAlign={'center'}  mb="20px" color="#4330EC" fontFamily="heading" fontWeight="bold" fontSize="40px">
             Intercamp
           </Heading>
             <Text fontSize="md" color="#0002FE" mb={4} textAlign="justify"> 

@@ -19,7 +19,7 @@ const Card = ({ imageSrc, altText, description }) => {
             <Text mt="4">Valor: R$3,00</Text>
           </Box>
         </Box>
-        <Button bg="#0002FE" color="#FFFFFF" size="md" mt={5}>
+        <Button bg="#0002FE" color="#FFFFFF" size="md" mt={5} onClick={() => window.open("https://www.sar.unicamp.br/restaurante_cardapio")}>
               Clique para acessar o cardápio do dia
             </Button>
       </Box>

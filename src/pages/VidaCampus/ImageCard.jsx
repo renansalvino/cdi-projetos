@@ -1,15 +1,17 @@
 import React from "react";
-import { Box, Heading, Text, Flex, Button, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, Button, Grid, GridItem, Center } from "@chakra-ui/react";
 
 const ImageCard = () => {
   return (
-    <Grid templateColumns="1fr 2fr 1fr" mt={20} marginLeft={200}>
-      <GridItem colSpan={2} textAlign="center" maxW="500px" justifySelf="center" ml={4}> 
+    <Grid templateColumns="1fr 2fr 1fr" mt={20} maxW="100%">
+      <GridItem colSpan={1} textAlign="center" ml={4} justifySelf={"center"}> 
+      </GridItem>
+      <GridItem colSpan={1} textAlign="center" ml={4} maxW="50%" justifySelf={"center"}> 
         <Box>
-          <Heading color="#0002FE" as="h2" fontSize="xl" mb={4}>
+          <Heading color="black" as="h2" fontSize="xl" mb={4} textAlign={'center'}>
             Intercamp
           </Heading>
-          <Text fontSize="md" color="#0002FE" mb={4}>
+            <Text fontSize="md" color="#0002FE" mb={4} textAlign="justify"> 
             O ônibus intercamp é um transporte gratuito cedido pela UNICAMP que possibilita que a comunidade da UNICAMP em Limeira (FT, FCA e Cotil) tenha acesso às atividades que ocorrem no campus de Barão Geraldo.
           </Text>
           <Flex direction="column">
